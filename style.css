@@ -54,10 +54,11 @@ a:hover {
 
 .header-copy h1 {
   margin: 0;
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(24px, 4vw, 40px);
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .header-copy p {
@@ -134,6 +135,11 @@ a:hover {
   overflow-wrap: anywhere;
 }
 
+.contact-list a[href^="mailto:"] {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 .contact-list svg {
   width: 18px;
   height: 18px;
@@ -168,7 +174,7 @@ a:hover {
 
 .resume-section {
   position: relative;
-  margin: 0 0 36px;
+  margin: 0 0 32px;
   padding-left: 64px;
 }
 
@@ -201,7 +207,7 @@ a:hover {
 .profile-copy {
   margin: 10px 0 0;
   font-size: 16px;
-  line-height: 1.43;
+  line-height: 1.5;
 }
 
 .project-list {
@@ -210,7 +216,7 @@ a:hover {
 
 .timeline-item {
   position: relative;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
 .timeline-item::before,
@@ -229,7 +235,7 @@ a:hover {
 .timeline-item h3,
 .education-item h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -242,8 +248,8 @@ a:hover {
 .timeline-item ul {
   margin: 0;
   padding-left: 27px;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1.38;
 }
 
 .education-section {
@@ -253,7 +259,7 @@ a:hover {
 
 .education-item {
   position: relative;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .education-item::before {
@@ -302,30 +308,31 @@ a:hover {
   }
 
   .resume-header {
-    min-height: 160px;
+    min-height: 140px;
   }
 
   .header-copy {
     margin-left: 0;
-    padding: 28px 24px 24px 190px;
+    padding: 18px 14px;
   }
 
   .header-copy h1 {
-    font-size: clamp(27px, 7vw, 40px);
+    font-size: clamp(18px, 5.2vw, 34px);
   }
 
   .header-copy p {
-    font-size: 16px;
+    margin-top: 5px;
+    font-size: 14px;
   }
 
   .sidebar {
-    padding: 28px 28px 34px;
+    padding: 82px 28px 34px;
   }
 
   .avatar {
-    top: -125px;
+    top: -50px;
     left: 24px;
-    width: 150px;
+    width: 120px;
     transform: none;
     border-width: 5px;
   }
@@ -349,7 +356,7 @@ a:hover {
   }
 
   .resume-section {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     padding-left: 52px;
   }
 
@@ -397,6 +404,13 @@ a:hover {
   .education-heading span {
     display: block;
     margin-top: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-copy h1 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
   }
 }
 
