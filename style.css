@@ -208,6 +208,8 @@ a:hover {
   margin: 10px 0 0;
   font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .project-list {
@@ -380,6 +382,10 @@ a:hover {
   .profile-copy,
   .timeline-item ul {
     font-size: 14px;
+  }
+
+  .profile-copy {
+    text-align: left;
   }
 
   .timeline-item h3,
