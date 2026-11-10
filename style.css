@@ -77,22 +77,15 @@ a:hover {
   position: absolute;
   top: -137px;
   left: 50%;
-  display: grid;
+  display: block;
   width: 238px;
   aspect-ratio: 1;
   transform: translateX(-50%);
-  place-items: center;
   border: 6px solid #fff;
   border-radius: 50%;
-  background: linear-gradient(145deg, #66778a, #aeb8bf);
-  color: #fff;
+  object-fit: cover;
+  object-position: center 38%;
   box-shadow: 0 0 0 1px rgb(51 61 80 / 12%);
-}
-
-.avatar span {
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 2px;
 }
 
 .side-section {
@@ -335,10 +328,6 @@ a:hover {
     width: 150px;
     transform: none;
     border-width: 5px;
-  }
-
-  .avatar span {
-    font-size: 34px;
   }
 
   .contact-section {
